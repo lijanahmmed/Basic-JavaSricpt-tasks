@@ -5,12 +5,6 @@ Loops
     👉 break
     👉 continue
 
-  for(init val; condition; update){
-  // code goes here
-  }
-  9 * 1 = 9
-  9 * 2 = 18
-
 
 var count = 5
 for (var a = 1; a <= count; a++) {
@@ -77,7 +71,7 @@ Reverse a string
 var text = 'Javascript is awesome'
 var temp = ''
 for (var i = 0; i < text.length; i++) {
-	// console.log(text[i])
+	console.log(text[i])
 	temp = text[i] + temp
 }
 console.log(temp)
@@ -100,7 +94,7 @@ var person = {
 console.log(person)
 console.log(person.name)
 
- array notation []
+// array notation []
 person['age'] = 25
 console.log(person.address.country)
 
@@ -112,7 +106,7 @@ for (var key in person) {
 }
 
 
-totalRows Row 1 - Normal Row, Row 4 - Premium Row 3/5 === 0
+// totalRows Row 1 - Normal Row, Row 4 - Premium Row 3/5 === 0
 var totalRows = 20
 for (let i = 1; i <= 50; i++) {
 	if (i % 3 === 0 || i % 5 === 0) {
@@ -122,9 +116,7 @@ for (let i = 1; i <= 50; i++) {
 	}
 }
 
-Problem 02: find tag
 
-solution: 2
 var details = 'this febric is my with iron. and this is for'
 
 if (details.includes('Cotton')) {
