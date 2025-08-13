@@ -1,9 +1,9 @@
-Loops
-    * for
-    * while
-    * do...while
-    👉 break
-    👉 continue
+// Loops
+//     * for
+//     * while
+//     * do...while
+//     👉 break
+//     👉 continue
 
 
 var count = 5
@@ -14,8 +14,8 @@ for (var a = 1; a <= count; a++) {
 var num = 99
 for (var i = 1; i <= 10; i++) {
 	// 9 * 2 = 18
-	// var result = num + ' * ' + i + ' = ' + i * num
-	// console.log(typeof result)
+	var result = num + ' * ' + i + ' = ' + i * num
+	console.log(typeof result)
 }
 let i = 1
 while (i <= 5) {
@@ -23,7 +23,7 @@ while (i <= 5) {
 	i++
 }
 
-do..while loop
+// do..while loop
 let i = 5
 do {
 	console.log('count: ', i)
@@ -44,12 +44,12 @@ for (let i = 1; i < 10; i++) {
 	console.log(i)
 }
 
-6. Strings
-    * String
-    * Immutable
-    * toLowerCase, toUpperCase, trim
-    * slice, concat, includes
-    * Reverse a string
+// 6. Strings
+//     * String
+//     * Immutable
+//     * toLowerCase, toUpperCase, trim
+//     * slice, concat, includes
+//     * Reverse a string
 
 var message = 'hello'
 
@@ -67,7 +67,7 @@ if (convertSent.includes('hello')) {
 	console.log('Not Found')
 }
 
-Reverse a string
+// Reverse a string
 var text = 'Javascript is awesome'
 var temp = ''
 for (var i = 0; i < text.length; i++) {
@@ -75,11 +75,12 @@ for (var i = 0; i < text.length; i++) {
 	temp = text[i] + temp
 }
 console.log(temp)
-9. Objects
-    * Properties
-    * Methods
-    * Nesting
-    * Looping
+
+// 9. Objects
+//     * Properties
+//     * Methods
+//     * Nesting
+//     * Looping
 var name = 'ismail'
 var person = {
 	name: 'ismail', //* key : value  = properties
@@ -117,7 +118,7 @@ for (let i = 1; i <= 50; i++) {
 }
 
 
-var details = 'this febric is my with iron. and this is for'
+var details = 'this fabric is my with iron. and this is for'
 
 if (details.includes('Cotton')) {
 	console.log('Material: Cotton')
