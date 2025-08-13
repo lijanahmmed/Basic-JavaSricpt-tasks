@@ -44,12 +44,12 @@ for (let i = 1; i < 10; i++) {
 	console.log(i)
 }
 
-// 6. Strings
-//     * String
-//     * Immutable
-//     * toLowerCase, toUpperCase, trim
-//     * slice, concat, includes
-//     * Reverse a string
+// Strings
+//    * String
+//    * Immutable
+//    * toLowerCase, toUpperCase, trim
+//    * slice, concat, includes
+//    * Reverse a string
 
 var message = 'hello'
 
@@ -76,7 +76,7 @@ for (var i = 0; i < text.length; i++) {
 }
 console.log(temp)
 
-// 9. Objects
+//  Objects
 //     * Properties
 //     * Methods
 //     * Nesting
