@@ -1,4 +1,4 @@
-# JavaScript Basic Problem Solving
+# JavaScript Basic Task Solution
 
 This repository contains a collection of beginner-friendly JavaScript problem-solving exercises. Each problem is designed to help you build a strong foundation in core programming concepts like variables, loops, conditionals, arrays, functions, and objects. These challenges are ideal for anyone starting their JavaScript journey or looking to sharpen their coding skills through practical examples.
 
