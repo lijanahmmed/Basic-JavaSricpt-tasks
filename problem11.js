@@ -5,7 +5,7 @@ for (var i = 1; i <= experience; i++){
     var fivePercent = currentSalary * 0.05;
     var currentSalary = currentSalary + fivePercent; 
 }
-var finalSalary = currentSalary.toFixed(2);
+var finalSalary = parseFloat(currentSalary.toFixed(2));
 console.log(finalSalary);
 
 // Output
