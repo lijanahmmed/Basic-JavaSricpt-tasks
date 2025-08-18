@@ -151,3 +151,84 @@ var result =
 	person01.companyName.toLowerCase() +
 	'.com'
 console.log(result)
+
+function totalFine( fare ) {
+    if (typeof fare !== "number" || fare <= 0){
+        return "Invalid";
+    }
+    const twentyPercentCharge = fare * .20;
+    const totalFine = fare + twentyPercentCharge + 30;
+    return totalFine;
+}
+
+
+function  onlyCharacter( str ) {
+    if (typeof str !== "string"){
+        return "Invalid";
+    }
+    const removeSpace = str.split(" ").join("");
+    const showCharacter = removeSpace.toUpperCase();
+    return showCharacter;
+}
+
+
+function  bestTeam( player1, player2 ) {
+    if (typeof player1 !== "object" || typeof player2 !== "object"){
+        return "Invalid";
+    }
+    const fareTeam1 = player1.foul + player1.cardY + player1.cardR;
+    const fareTeam2 = player2.foul + player2.cardY + player2.cardR;
+    if (fareTeam1 === fareTeam2){
+        return "Tie";
+    }
+    else if(fareTeam1 > fareTeam2){
+        return player2.name;
+    }
+    else if (fareTeam1 < fareTeam2){
+        return player1.name;
+    }
+}
+
+
+function  isSame(arr1 , arr2 ) {
+    if (Array.isArray(arr1) === false || Array.isArray(arr2) === false){
+        return "Invalid";
+    }
+    if (arr1.length !== arr2.length){
+        return false;
+    }
+    for(let i = 0; i < arr1.length; i++){
+        if(arr1[i] !== arr2[i]){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+function  resultReport( marks ) {
+    if(Array.isArray(marks) === false){
+        return "Invalid"
+    }
+    let totalMarks = 0;
+    let passMarks = [];
+    let failMarks = [];
+    for(const mark of marks){
+        totalMarks = totalMarks + mark;
+        if (mark >= 40){
+            passMarks.push(mark);
+        }
+        else{
+            failMarks.push(mark);
+        }
+    }
+    const pass = passMarks.length;
+    const fail = failMarks.length;
+    const avgMark = totalMarks / marks.length;
+    let finalScore = Math.round(avgMark);
+    if (isNaN(finalScore)){
+        finalScore = 0;
+    }
+    const outputObject = { finalScore: finalScore, pass: pass, fail: fail };
+    return outputObject;
+}
